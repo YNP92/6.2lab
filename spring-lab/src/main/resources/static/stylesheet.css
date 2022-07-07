@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.subcat {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: slateblue;
+    color: white;
+    font-size: x-large;
+
+}
+
+.button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: chocolate;
+    border: none;
+    color: white;
+    padding-top:10px;
+    padding: bottom 10px; ;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30% ;
+    margin-right: 30% ;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.specialpizza {
+    font-size: smaller;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: salmon;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 400%;
+
+}
+
+h2.subcat {
+    font-family: 'Bebas Neue', cursive;
+}
+h1.pizzapage {
+    font-size: xx-large;
+}
+
