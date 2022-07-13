@@ -26,24 +26,27 @@
                  (Note: The rating information is not actually saved or shown elsewhere at this point.)
                   The page also includes a link back to the homepage. -->
 	<form method="post" action="/reviewform">
-		Name: <input type="text" name="name" /> Comment:
-		<textarea rows="5" cols="5" name="comment"> </textarea>
-		<ul class='likert'>
-			Rate your Slice!:
-			<li><input type="radio" name="rating" value=1> <label>Strongly
-					agree</label></li>
-			<li><input type="radio" name="rating" value=2> <label>Agree</label>
+		Name: <input type="text" name="name" required /><br><br>
+		Comment:<textarea name="comment" required minlength="5"></textarea>
+<!-- 		Comment:<textarea required rows="5" cols="5" name="comment" > </textarea>
+ -->		<ul class='likert'>
+			<li>Rate your Slice!:
+				<ul>
+					<li><input type="radio" name="rating" value=1 required /> <label>Strongly
+							agree</label></li>
+					<li><input type="radio" name="rating" value=2 /> <label>Agree</label>
+					</li>
+					<li><input type="radio" name="rating" value=3 /> <label>Neutral</label>
+					</li>
+					<li><input type="radio" name="rating" value=4 /> <label>Disagree</label>
+					</li>
+					<li><input type="radio" name="rating" value=5 /> <label>Strongly
+							disagree</label></li>
+				</ul>
 			</li>
-			<li><input type="radio" name="rating" value=3> <label>Neutral</label>
-			</li>
-			<li><input type="radio" name="rating" value=4> <label>Disagree</label>
-			</li>
-			<li><input type="radio" name="rating" value=5> <label>Strongly
-					disagree</label></li>
 		</ul>
-		<input type="reset" value="Reset"> 
-		<input type="submit" value="Submit"> 
-		<a href="/" class="button">Take me Home</a>
+		<input type="reset" value="Reset"> <input type="submit"
+			value="Submit"> <a href="/" class="button">Take me Home</a>
 	</form>
 </body>
 </html>

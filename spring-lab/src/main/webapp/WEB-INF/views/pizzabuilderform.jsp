@@ -20,16 +20,17 @@
 <body>
 	<form method="post" action="\pizzabuilderform">
 
-		<label for="BYOP">Choose your pie size:</label> <select name="size"
-			class="pizzasize">
+		<label for="BYOP">Choose your pie size:</label> <select required
+			name="size" class="pizzasize">
 			<option value="small">small</option>
 			<option value="medium">medium</option>
 			<option value="large">large</option>
-		</select><br> <br> Select how many toppings you would like: <input
-			name="toppings" type="text" /><br> <br> Check if you would
-		like Gluten-Free Crust: <input name="glutenfree" type="checkbox"
-			value="true" /> <input name="glutenfree" type="hidden" value="false" /><br>
-		<br> Special Instructions:
+		</select> <br><br> Select how many toppings you would like: <input
+			required name="toppings" type="number" min="0" max="10" /><br>
+		<br> Check if you would like Gluten-Free Crust: <input
+			name="glutenfree" type="checkbox" value="true" /> <input
+			name="glutenfree" type="hidden" value="false" /><br> <br>
+		Special Instructions:
 		<textarea rows="5" cols="5" name="special"> </textarea>
 		<br> <br> <input type="reset" value="Reset"> <input
 			type="submit" value="Submit"> <a href="/" class="button">Take
